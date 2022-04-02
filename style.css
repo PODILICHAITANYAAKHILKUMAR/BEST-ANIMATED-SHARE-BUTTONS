@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto';
+    background-color: #111111;
+    text-align: center;
+    font-size: 28px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    }
+    
+    .share span {
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    font-weight: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    }
+    
+    .share a {
+    line-height: 80px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #ffffff;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -20px;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .share a:nth-child(1) {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-left: 0;
+    }
+    
+    .share a:nth-child(1):hover {
+    background-color: #61c5ec;
+    }
+    
+    .share a:nth-child(2):hover {
+    background-color: #3B5998;
+    }
+    
+    .share a:nth-child(3):hover {
+    background-color: #ea4335;
+    }
+    
+    .share a:nth-child(4) {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 0;
+    }
+    
+    .share a:nth-child(4):hover {
+    background-color: #525050;
+    }
+    
+    .share:hover span,
+    .share.hover span {
+    opacity: 0;
+    }
+    
+    .share:hover a,
+    .share.hover a {
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #111111;
+    font-size: 28px;
+    }
+    
+    .share:hover a:hover,
+    .share.hover a:hover {
+    color: #fff;
+    }
+    
+    a:hover {
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    @keyframes text-pop-up-top {
+    0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    }
+    
+    100% {
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    }
+    }
+    
